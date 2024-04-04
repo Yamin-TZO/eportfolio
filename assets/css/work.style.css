@@ -1,0 +1,258 @@
+/* Base Styles */
+html {
+  font-size: 100%; /* 16px by default */
+  font-family: 'Monaco', 'Andale Mono', 'Courier New', monospace;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0rem;
+}
+
+/* Responsive Typography */
+@media (max-width: 1200px) {
+  html {
+      font-size: 95%; /* Slightly smaller font size on large screens */
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+      font-size: 90%; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+      font-size: 85%; /* Adjust font size for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+      font-size: 80%; /* Adjust font size for extra small screens */
+  }
+}
+
+/* Utility Classes for Margins and Padding */
+.spacing {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Headings and Paragraphs for Better Readability
+h1 = title 
+h2 = subtitile 
+h3 = session 
+p = text in paragraph
+*/
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.accordion-button {
+  background-color: #3D86B7;
+  margin-top: 20px;
+}
+
+.phone-ss {
+  width: 100%;
+  height: 500px;
+}
+
+.photo-subtitle {
+  padding: 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.prototype-fluid {
+  max-width: 100%;
+  height: 500px;
+  border-radius: 37px;
+}
+
+/* .img-fluid {
+  max-height: 100%; 
+  width: auto; 
+  object-fit: cover; 
+} */
+
+.photo-medium, .affinity-image {
+  width: 540px;
+  border-radius: 10%;
+}
+
+/* Apply for small to extra small devices */
+@media (max-width: 768px) {
+  .photo-medium, .affinity-image {
+    width: 450px; /* This width will apply from 768px down */
+  }
+}
+
+@media (max-width: 576px) {
+  .photo-medium, .affinity-image {
+    width: 314px; /* This width will apply down to the smallest size */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .affinity-image {
+    height: 608px; /* Set the desired height for large screens */
+  }
+}
+
+.titlelinesimple {
+  border-top: 1px solid #CCC; 
+  border-bottom: 2px solid #fff;
+  margin-bottom:20px;
+}
+
+.highlight {
+  background: #7b9263; 
+  color: #fff; 
+  /* background: #f5d56a; 
+  color: #111; */
+  padding: 1px 3px 2px 3px; 
+  display:inline;
+}
+
+.read-more {
+  /* max-width: 540px;  */
+  background-color: transparent;
+  border-style: none;
+  border-top: 3px dashed black;  
+  border-bottom: 3px dashed black;
+}
+
+.sticky-note-green .card-header {
+  background-color: #28a745; 
+}
+
+.sticky-note-green .card-body {
+  background-color: #70db8d;
+}
+
+.sticky-note-red .card-header {
+  background-color: #dc3545; 
+}
+
+.sticky-note-red .card-body {
+  background-color: #f5c6cb;
+}
+
+.sticky-note-blue .card-header {
+  background-color: #007bff; 
+}
+
+.sticky-note-blue .card-body {
+  background-color: #b8daff;
+}
+
+.sticky-note-yellow .card-header {
+  background-color: #ffc107; 
+}
+
+.sticky-note-yellow .card-body {
+  background-color: #fff3cd;
+}
+
+.sticky-note-cyan .card-header {
+  background-color: #17a2b8; 
+}
+
+.sticky-note-cyan .card-body {
+  background-color: #a4d7e1;
+}
+
+.card-header {
+  font-size: 1.75rem; /* Size of h3 */
+  color: white;
+  text-align: center;
+}
+
+.card-body {
+  font-size: 1rem; /* Size of h5 */
+  color: black;
+  text-align: left;
+  border-radius: 0 0 3px 3px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Marvel:400,700')
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+body
+  font-family: 'Marvel', sans-serif
+  background-color: yellow
+#info
+  background-color: yellow
+  padding: 2rem 0
+
+.row
+  width: 100%
+  max-width: 45rem
+  margin: 0 auto
+  padding: 1.5rem
+  background-color: yellow
+.card
+  display: inline-block
+  width: 45%
+  //margin: 0 auto
+  padding: 4rem 1rem 7rem 1rem
+  background-color: teal
+  position: relative
+  &:after
+    content: ""
+    display: block
+    width: 0px
+    height: 0px
+    background-color: skyblue
+    top: 0px
+    right: 0px
+    border-bottom: 20px solid darken(teal, 5%)
+    border-left: 20px solid darken(teal, 5%)
+    border-right: 20px solid yellow
+    border-top: 20px solid yellow
+    position: absolute
+    filter: drop-shadow(-5px 5px 3px rgba(0,0,0,0.5))
+  &:before
+    content: ""
+    display: block
+    width: 0px
+    height: 0px
+    border-top: 40px solid darken(teal, 5%)
+    border-right: 40px solid darken(teal, 5%)
+    border-left: 40px solid yellow
+    border-bottom: 40px solid yellow
+    bottom: 0px
+    left: 0px
+    position: absolute
+    filter: drop-shadow(7px -7px 5px rgba(0,0,0,0.5))
+    margin-right: 10%
+  &:nth-of-type(1)
+    margin-right: 9%
+  h2
+    color: snow
+    margin-bottom: 1rem
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 1px
+  p
+    color: snow
+    font-size: 1.1rem
+    line-height: 140%
+  
+  
