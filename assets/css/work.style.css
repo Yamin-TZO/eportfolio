@@ -121,8 +121,48 @@ p {
 .highlight {
   background: #7b9263; 
   color: #fff; 
-  /* background: #f5d56a; 
-  color: #111; */
+  padding: 1px 3px 2px 3px; 
+  display:inline;
+}
+
+.highlight-pink {
+  background: #d45f81; 
+  color: #fff; 
+  padding: 1px 3px 2px 3px; 
+  display:inline;
+}
+
+.highlight-skyblue {
+  background: #3D86B7;
+  color: #fff; 
+  padding: 1px 3px 2px 3px; 
+  display:inline;
+}
+
+.highlight-navyblue {
+  background: #4e54a2; 
+  color: #fff; 
+  padding: 1px 3px 2px 3px; 
+  display:inline;
+}
+
+.highlight-green {
+  background: #81b94f; 
+  color: #fff;
+  padding: 1px 3px 2px 3px; 
+  display:inline;
+}
+
+.highlight-yellow {
+  background: #ffb500; 
+  color: #fff; 
+  padding: 1px 3px 2px 3px; 
+  display:inline;
+}
+
+.highlight-grey {
+  color: #fff; 
+  background: #4D4D4D; 
   padding: 1px 3px 2px 3px; 
   display:inline;
 }
